@@ -1,0 +1,69 @@
+package com.spring.rubrica.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.spring.rubrica.dao.DAORubrica;
+import com.spring.rubrica.dto.RubricaDTO;
+
+public class RubricaServiceImpl implements RubricaService{
+
+	@Autowired
+	private DAORubrica dao;
+	
+	@Override
+	public boolean creaRubrica(RubricaDTO dto) {
+		
+		public static Contatto daContattoDtoAContatto(ContattoDTO dto) {
+	        return new Contatto(dto.getIdContatto(), dto.getNome(), dto.getCognome(), dto.getNumero());
+	    }
+
+	    public static ContattoDTO daContattoAContattoDto(Contatto contatto) {
+	        return new ContattoDTO(contatto.getIdContatto(), contatto.getNome(), contatto.getCognome(), contatto.getNumero());
+	    }
+
+	    public static Rubrica daRubricaDtoARubrica(RubricaDTO dto) {
+	        Rubrica rubrica = new Rubrica(dto.getIdRubrica(), dto.getProprietario(), dto.getAnnoCreazione());
+
+	        // converto la lista
+	        List<ContattoDTO> listaD = dto.getContatti();
+
+	        List<Contatto> lista = listaD.stream()
+	                .map(contattoD -> Conversioni.daContattoDtoAContatto(contattoD))
+	                .collect(Collectors.toList());
+
+	        rubrica.setContatti(lista);
+	        return rubrica;
+
+	    }
+
+	    public static RubricaDTO daRubricaARubricaDto(Rubrica rubrica) {
+	        RubricaDTO rubricaD = new RubricaDTO(rubrica.getIdRubrica(), rubrica.getProprietario(), rubrica.getAnnoCreazione());
+
+	        // converto la lista
+	        List<Contatto> lista = rubrica.getContatti();
+
+	        List<ContattoDTO> listaD = lista.stream()
+	                .map(contatto -> Conversioni.daContattoAContattoDto(contatto))
+	                .collect(Collectors.toList());
+
+	        rubricaD.setContatti(listaD);
+	        return rubricaD;
+
+	    }
+
+		return false;
+	}
+
+	@Override
+	public RubricaDTO cerca(Integer idRubrica) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean aggiungiContatto(Integer idRubrica, ContattoDTO dto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

@@ -1,0 +1,99 @@
+/* App.css */
+
+/* Corpo della pagina con uno sfondo più vivace */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6b44f8, #feb47b, #ff9e2c); /* Gradiente con 3 colori */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+/* Contenitore principale */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Card Style */
+.card {
+  background: linear-gradient(135deg, #ffffff, #f58c5c); /* Gradiente bianco a beige per la card */
+  border-radius: 20px;
+  padding: 2em;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: 280px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: 1px solid #211429;
+}
+
+
+/* Effetto Hover sulla Card */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Titolo della Card */
+.card h3 {
+  font-size: 1.8rem;
+  color: #ff7e5f; /* Colore che richiama il gradiente di sfondo */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Testo della Card */
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Pulsante */
+.card-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff7e5f; /* Colore abbinato al gradiente */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+/* Effetto Hover sul pulsante */
+.card-button:hover {
+  background-color: #feb47b; /* Colore complementare per il pulsante */
+}
+
+/* Effetto cliccando sul pulsante */
+.card-button:active {
+  transform: scale(0.98);
+}
+
+/* Read-the-docs link */
+.read-the-docs {
+  color: #888;
+}

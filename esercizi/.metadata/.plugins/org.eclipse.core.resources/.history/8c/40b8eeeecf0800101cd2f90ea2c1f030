@@ -1,0 +1,5 @@
+package com.spring.studente.dto;
+
+public class StudenteDTO {
+
+}

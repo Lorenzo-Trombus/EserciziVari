@@ -1,0 +1,37 @@
+package com.spring.rubrica.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.rubrica.dto.ProdottoDTO;
+import com.spring.rubrica.dto.VenditoreDTO;
+import com.spring.rubrica.service.VenditoreService;
+
+@RestController
+@RequestMapping(path="/venditore")
+public class VenditoreController {
+	@Autowired
+	private VenditoreService service;
+	
+	@PostMapping(consumes = "application/json")
+	public boolean inserisci(@RequestBody VenditoreDTO dto) {
+		return service.inserisciVenditore(dto);
+	}
+	
+	@GetMapping(path="/{idVenditore}", produces="application/json")
+	public VenditoreDTO cerca(@PathVariable Integer idVenditore) {
+		return service.cercaVenPerId(idVenditore);
+		
+	}
+	@PostMapping(path="/{idVenditore}/prodotti",consumes="application/json")
+	public boolean aggiungiProdotto(@PathVariable Integer idVenditore,@RequestBody ProdottoDTO dto) {
+		return service.aggiungiProdotto(idVenditore, dto);
+	}
+	
+
+}

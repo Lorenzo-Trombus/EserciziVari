@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;WIFI.java&apos; to &apos;WiFi.java&apos;&#x0A;- Original project: &apos;P20241203-01_IO&apos;&#x0A;- Original element: &apos;WIFI.java&apos;&#x0A;- Renamed element: &apos;WiFi.java&apos;" description="Rename compilation unit &apos;WIFI.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{WIFI.java" name="WiFi.java" references="false" stamp="1733216557003" version="1.0"/>
+</session>

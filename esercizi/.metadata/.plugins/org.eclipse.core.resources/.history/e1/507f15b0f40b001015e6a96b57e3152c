@@ -1,0 +1,5 @@
+package com.spring.rubrica.entiity;
+
+public class Prodotto {
+
+}

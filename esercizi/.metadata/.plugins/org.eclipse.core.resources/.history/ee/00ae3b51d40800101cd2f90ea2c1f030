@@ -1,0 +1,5 @@
+package com.spring.studente.controller;
+
+public class StudenteController {
+
+}

@@ -1,0 +1,4 @@
+Tutti i film che hanno vinto meno di 1 premio e genere Short
+
+{"awards": { "$lt": 1 },"genres": "Short"}
+

@@ -1,0 +1,13 @@
+"Studente": {
+    "ID":"1234",
+    "nome":"Giuseppe",
+    "cognome":"Simone",
+    "matricola":"54321",
+    "data di nascita": {
+        "giorno":"18",
+        "mese":"03",
+        "anno":"1994"
+    }
+
+}
+

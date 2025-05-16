@@ -1,0 +1,36 @@
+package com.spring.rubrica.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.spring.rubrica.dao.DAOVenditore;
+import com.spring.rubrica.dto.ProdottoDTO;
+import com.spring.rubrica.dto.VenditoreDTO;
+
+@Service
+@Transactional
+public class VenditoreServiceImpl implements VenditoreService {
+
+	@Autowired
+	private DAOVenditore dao;
+	
+	@Override
+	public boolean inserisciVenditore(VenditoreDTO dto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public VenditoreDTO cercaVenPerId(Integer idVenditore) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean aggiungiProdotto(Integer idVenditore, ProdottoDTO dto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

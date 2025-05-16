@@ -1,0 +1,33 @@
+package com.spring.rubrica.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.rubrica.dto.ContattoDTO;
+import com.spring.rubrica.dto.RubricaDTO;
+import com.spring.rubrica.service.RubricaService;
+
+@RestController
+@RequestMapping(path="/rubriche")
+public class RubricaController {
+	@Autowired
+	private RubricaService service;
+	@PostMapping(consumes ="application/json")
+	public boolean crea(@RequestBody RubricaDTO dto) {
+		return service.creaRubrica(dto);
+	}
+	@GetMapping(path="/{idRubrica}",produces ="application/json")
+	public RubricaDTO cerca(@PathVariable Integer idRubrica) {
+		return service.cerca(idRubrica);
+	}
+	@PostMapping(path="/{idRubrica}/contatti",consumes = "application/json")
+	public boolean aggiungi(@PathVariable Integer idRubrica, @RequestBody ContattoDTO dto) {
+		return service.aggiungiContatto(idRubrica, dto);
+		}
+
+}

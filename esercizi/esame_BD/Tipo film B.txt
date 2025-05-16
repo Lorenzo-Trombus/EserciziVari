@@ -1,0 +1,6 @@
+Cercare tutte i film di tipo "Action"
+
+
+
+{ "genres": "Action" }
+

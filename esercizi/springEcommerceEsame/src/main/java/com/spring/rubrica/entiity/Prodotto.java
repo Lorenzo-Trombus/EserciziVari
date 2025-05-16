@@ -1,0 +1,84 @@
+package com.spring.rubrica.entiity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Prodotto {
+	
+	@Id
+	private int idProdotto;
+	
+	private String descrizione,categoria;
+	private int quantità, prezzo, sconto;
+	
+	public Prodotto() {
+		
+	}
+
+	public Prodotto(int idProdotto, String descrizione, String categoria, int quantità, int prezzo, int sconto) {
+		super();
+		this.idProdotto = idProdotto;
+		this.descrizione = descrizione;
+		this.categoria = categoria;
+		this.quantità = quantità;
+		this.prezzo = prezzo;
+		this.sconto = sconto;
+	}
+
+	public int getIdProdotto() {
+		return idProdotto;
+	}
+
+	public void setIdProdotto(int idProdotto) {
+		this.idProdotto = idProdotto;
+	}
+
+	public String getDescrizione() {
+		return descrizione;
+	}
+
+	public void setDescrizione(String descrizione) {
+		this.descrizione = descrizione;
+	}
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+	public int getQuantità() {
+		return quantità;
+	}
+
+	public void setQuantità(int quantità) {
+		this.quantità = quantità;
+	}
+
+	public int getPrezzo() {
+		return prezzo;
+	}
+
+	public void setPrezzo(int prezzo) {
+		this.prezzo = prezzo;
+	}
+
+	public int getSconto() {
+		return sconto;
+	}
+
+	public void setSconto(int sconto) {
+		this.sconto = sconto;
+	}
+
+	@Override
+	public String toString() {
+		return "Prodotto [idProdotto=" + idProdotto + ", descrizione=" + descrizione + ", categoria=" + categoria
+				+ ", quantità=" + quantità + ", prezzo=" + prezzo + ", sconto=" + sconto + "]";
+	}
+	
+	
+}

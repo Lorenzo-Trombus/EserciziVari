@@ -1,0 +1,20 @@
+package com.spring.studente.service;
+
+import org.springframework.stereotype.Service;
+
+import com.spring.studente.dao.DAOStudente;
+import com.spring.studente.dto.StudenteDTO;
+
+import jakarta.transaction.Transactional;
+
+@Service
+@Transactional
+public class StudenteServiceImpl  implements StudenteService{
+	@Autowired
+	private DAOStudente dao;
+	
+	@Override
+	public boolean immatricola(StudenteDTO dto) {
+		return false;
+	}
+}

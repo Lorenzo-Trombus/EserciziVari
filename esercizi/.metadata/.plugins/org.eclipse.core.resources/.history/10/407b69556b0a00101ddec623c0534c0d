@@ -1,0 +1,33 @@
+package com.spring.rubrica.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.spring.rubrica.dto.RubricaDTO;
+
+public class RubricaServiceImpl implements RubricaService{
+
+	@Autowired
+	private DAORubrica dao;
+	
+	@Override
+	public boolean creaRubrica(RubricaDTO dto) {
+		
+		
+		return false;
+	}
+
+	@Override
+	public RubricaDTO cerca(Integer idRubrica) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean aggiungiContatto(Integer idRubrica, ContattoDTO dto) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+	
+}

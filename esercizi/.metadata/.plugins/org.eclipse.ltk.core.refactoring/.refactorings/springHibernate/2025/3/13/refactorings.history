@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.spring.rubrica&apos; to &apos;com.spring.studente&apos;&#x0A;- Original project: &apos;springHibernate&apos;&#x0A;- Original element: &apos;springHibernate/src/main/java/com.spring.rubrica&apos;&#x0A;- Renamed element: &apos;springHibernate/src/main/java/com.spring.studente&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.spring.rubrica&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.rubrica" name="com.spring.studente" qualified="false" references="true" stamp="1742829419121" textual="false" version="1.0"/>
+</session>

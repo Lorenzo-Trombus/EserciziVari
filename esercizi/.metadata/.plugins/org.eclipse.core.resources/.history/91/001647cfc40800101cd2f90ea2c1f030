@@ -1,0 +1,5 @@
+package com.spring.studente.entity;
+
+public class Studente {
+
+}

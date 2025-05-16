@@ -1,0 +1,16 @@
+Vincoli esterni:
+
+per ogni a:Autore deve essere:
+	(data_morte) > (data_nascita)
+	
+
+per ogni b:Biglietto deve essere:
+	(data_validita)>=(istante_vendita)
+	
+
+per ogni t:Temporanea deve essere:
+	(inizio)>(fine)
+	
+
+
+

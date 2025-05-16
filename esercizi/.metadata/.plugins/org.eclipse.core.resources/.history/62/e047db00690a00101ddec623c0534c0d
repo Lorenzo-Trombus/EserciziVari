@@ -1,0 +1,15 @@
+package com.spring.rubrica.dto;
+
+import java.util.ArrayList;
+
+public class RubricaDTO {
+
+	private int idRubrica;
+	private String proprietario;
+	private int annoCreazione;
+	
+	private List<ContattoDTO> contatti = new ArrayList<>();
+	public RubricaDTO() {
+		
+	}
+}

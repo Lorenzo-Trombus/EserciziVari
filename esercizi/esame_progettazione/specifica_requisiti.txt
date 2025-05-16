@@ -1,0 +1,44 @@
+1: Opere:
+	1.1: nome
+	1.2: categoria (dipinto, scultura, mosaico, manoscritto)
+	1.3: Autore ( associazione 2: Autore)
+	1.4: anno di realizzazione 
+	1.5: tecnica (puo' essere null)
+	1.6: correnti artistiche
+
+
+2: Autore: 
+	2.1: nome d'arte (puo' essere null)
+	2.2: luogo di nascita
+	2.3: data di nascita 
+	2.4: data di morte (puo' essere null)
+	2.5: opere
+
+3: Esposizioni:
+	3.1: opere (con rispettivo tempo di esposizione, associazione 1: Opere)
+	3.2: Permanenti (sempre attive) (forse non necessaria) 
+	3.3: Temporanee:
+		3.3.1: tema (artista, gruppo di artisti, corrente artistica, periodo storico)
+		3.3.2: nome
+		3.3.3: inizio esposizione
+		3.3.4: fine esposizione (deve essere> di inizio)
+		3.3.5: prezzo di accesso 
+		
+4: Tariffa:
+	4.1: nome 
+	4.2: prezzo base (reale >=0)
+	
+	
+5: Biglietto:
+	5.1: Tariffa (associazione 4: Tariffa)
+	5.2: istante di vendita
+	5.3: data di validita
+	5.4: Standard (forse non necessaria)
+	5.5: Extended: 
+		5.5.1: prezzo esteso (prezzo base + prezzo di accesso di ciascuna esposizione temp. scelta)
+	
+		
+
+
+	
+

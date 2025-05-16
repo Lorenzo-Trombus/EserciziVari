@@ -1,0 +1,24 @@
+!SESSION 2024-10-07 11:40:55.198 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.12
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=it_IT
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data @noDefault
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-10-07 11:41:40.591
+!MESSAGE Loading 'file:/home/user/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-10-07 11:41:40.594
+!MESSAGE Loading 'file:/home/user/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-10-07 11:41:40.599
+!MESSAGE Loading 'file:/home/user/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-10-07 11:41:40.599
+!MESSAGE Loading 'file:/home/user/.p2/org.eclipse.equinox.p2.core/cache/' failed. retry=2
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-10-07 11:41:40.601
+!MESSAGE Loading 'file:/home/user/.p2/pool/' failed. retry=1
+
+!ENTRY org.eclipse.equinox.p2.artifact.repository 2 0 2024-10-07 11:41:40.601
+!MESSAGE Loading 'file:/home/user/.p2/pool/' failed. retry=2

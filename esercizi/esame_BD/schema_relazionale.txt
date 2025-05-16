@@ -1,0 +1,13 @@
+Utente(__cf__:varchar,nome:varchar,cognome:varchar)
+
+Noleggio(__id__: integer, inizio: timestamp, fine:timestamp, terminato:Boolean)
+	foreign_key: utente references Utente(cf)
+	foreign_key: veicolo references Veicolo(targa)
+
+
+Veicolo(__targa__:varchar)
+	
+	
+Sinistro(__id__:integer, istante:timestamp)
+	foreign_key: veicolo references Veicolo(targa)
+
